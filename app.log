@@ -1,0 +1,5 @@
+2024-09-24 22:40:54,019 - DEBUG - Home page accessed
+2024-09-24 22:41:06,682 - DEBUG - Home page accessed
+2024-09-24 22:41:08,381 - CRITICAL - Critical issue encountered on /test
+2024-09-24 22:41:08,382 - INFO - Information logged on /test
+2024-09-24 22:41:08,382 - DEBUG - Debugging information for /test

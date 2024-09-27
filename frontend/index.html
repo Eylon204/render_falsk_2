@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            padding: 10px;
+            margin-bottom: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Categories</h1>
+    <ul id="category-list">
+        <!-- Categories will be loaded here -->
+    </ul>
+
+    <script>
+        // Function to load categories from the Flask API
+        function loadCategories() {
+            fetch('http://127.0.0.1:5000/categories')
+                .then(response => response.json())
+                .then(data => {
+                    const categoryList = document.getElementById('category-list');
+                    categoryList.innerHTML = '';  // Clear the list before adding new items
+
+                    data.forEach(category => {
+                        const li = document.createElement('li');
+                        li.textContent = `Category ID: ${category.catid}, Description: ${category.desc}`;
+                        categoryList.appendChild(li);
+                    });
+                })
+                .catch(error => console.error('Error fetching categories:', error));
+        }
+
+        // Call the function to load categories when the page loads
+        window.onload = loadCategories;
+    </script>
+</body>
+</html>
