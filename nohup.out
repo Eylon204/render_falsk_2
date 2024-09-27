@@ -1,0 +1,12 @@
+[2024-09-27 15:08:25 +0300] [65551] [INFO] Starting gunicorn 23.0.0
+[2024-09-27 15:08:25 +0300] [65551] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2024-09-27 15:08:25 +0300] [65551] [ERROR] connection to ('0.0.0.0', 5000) failed: [Errno 48] Address already in use
+[2024-09-27 15:08:26 +0300] [65551] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2024-09-27 15:08:26 +0300] [65551] [ERROR] connection to ('0.0.0.0', 5000) failed: [Errno 48] Address already in use
+[2024-09-27 15:08:27 +0300] [65551] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2024-09-27 15:08:27 +0300] [65551] [ERROR] connection to ('0.0.0.0', 5000) failed: [Errno 48] Address already in use
+[2024-09-27 15:08:28 +0300] [65551] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2024-09-27 15:08:28 +0300] [65551] [ERROR] connection to ('0.0.0.0', 5000) failed: [Errno 48] Address already in use
+[2024-09-27 15:08:29 +0300] [65551] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2024-09-27 15:08:29 +0300] [65551] [ERROR] connection to ('0.0.0.0', 5000) failed: [Errno 48] Address already in use
+[2024-09-27 15:08:30 +0300] [65551] [ERROR] Can't connect to ('0.0.0.0', 5000)
